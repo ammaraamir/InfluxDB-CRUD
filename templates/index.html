@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{author}}</title>	
+  </head>  
+
+  <body>
+    <div id="myform">
+	<form action="/create" method="post">
+  	<input type="text" name="dbname"></input>	
+  	<input type="submit" value="Create"></input>
+	</form>
+	<form action="/usedb" method="post">
+	<input type="text" name="usedb"></input>
+  	<input type="submit" value="Use"></input>
+	</form>
+	<form action="/select" method="post">
+	<input type="text" name="selectQuery"></input>
+  	<input type="submit" value="Select"></input>
+	</form>
+	<form action="/insert" method="post">
+	<label for="usedb">Name of db to use: </label>	
+	<input type="text" name="usedb"></input>
+	<label for="insertQuery">Insert here: </label>
+	<input type="text" name="insertQuery"></input>
+  	<input type="submit" value="Insert"></input>
+	</form>
+	<form action="/update" method="post">
+	<input type="text" name="updateQuery"></input>
+  	<input type="submit" value="Update"></input>
+	</form>
+	<form action="/delete" method="post">
+	<input type="text" name="deleteQuery"></input>
+  	<input type="submit" value="Delete"></input>
+	</form>
+    </div>
+  </body>
+</html>
